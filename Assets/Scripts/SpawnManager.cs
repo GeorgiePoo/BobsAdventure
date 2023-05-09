@@ -6,6 +6,7 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject enemyPrefab;
     private Vector3 spawnPos = new Vector3(23, -1, -1);
+    public Vector2 spawnTimeRange;
 
     // Start is called before the first frame update
     void Start()
