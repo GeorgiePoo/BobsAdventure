@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: -8313447291984499913}
   m_Layer: 0
   m_Name: AlienB_Pr
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -255,7 +255,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 108
   m_CollisionDetection: 0
 --- !u!65 &-8313447291984499913
 BoxCollider:
@@ -268,8 +268,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.7456486, z: 1}
-  m_Center: {x: 0, y: 0.95340765, z: 0}
+  m_Size: {x: 1, y: 1.6788151, z: 1}
+  m_Center: {x: 0, y: 0.9868244, z: 0}
 --- !u!1 &600315770902335261
 GameObject:
   m_ObjectHideFlags: 0

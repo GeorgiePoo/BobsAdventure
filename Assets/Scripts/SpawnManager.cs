@@ -5,14 +5,15 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject[] enemyPrefabs;
-    private Vector3 spawnPos = new Vector3(23, -1, -1);
+    private Vector3 spawnPos = new Vector3(28, -1, -1);
     public Vector2 spawnTimeRange;
     public int numberOfEnemies;
-    
+    private PlayerController playerControllerScript;
 
     // Start is called before the first frame update
     void Start()
     {
+        playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
         StartCoroutine(SpawnEnemies());
     }
 
@@ -26,13 +27,15 @@ public class SpawnManager : MonoBehaviour
     {
         for (int i = 0; i < numberOfEnemies; i++)
         {
+            if(playerControllerScript.gameOver == false)
+            {
+                GameObject randomEnemyPrefab = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
+                Instantiate(randomEnemyPrefab, spawnPos, randomEnemyPrefab.transform.rotation);
 
-            GameObject randomEnemyPrefab = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
-            Instantiate(randomEnemyPrefab, spawnPos, randomEnemyPrefab.transform.rotation);
-
-            //Random Time Spawns
-            float waitTime = Random.Range(spawnTimeRange.x, spawnTimeRange.y);
-            yield return new WaitForSeconds(waitTime);
+                //Random Time Spawns
+                float waitTime = Random.Range(spawnTimeRange.x, spawnTimeRange.y);
+                yield return new WaitForSeconds(waitTime);
+            }
         }
         
     }
