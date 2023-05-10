@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2175,7 +2175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1749930706}
-  - component: {fileID: 1749930705}
+  - component: {fileID: 1749930707}
   m_Layer: 0
   m_Name: PlatformSpawn
   m_TagString: Untagged
@@ -2183,22 +2183,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1749930705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1749930704}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee7aa642e6f8da04caed9d4cbb55ddbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  platformPrefabs:
-  - {fileID: 268569394483678548, guid: 15a7c68b8ac199349aa7e8f7768c4165, type: 3}
-  numberOfPlatforms: 1
-  spawnTimeRange: {x: 0, y: 1}
 --- !u!4 &1749930706
 Transform:
   m_ObjectHideFlags: 0
@@ -2214,6 +2198,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1749930707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749930704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee7aa642e6f8da04caed9d4cbb55ddbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platformPrefabs:
+  - {fileID: 4805934394381421430, guid: 15a7c68b8ac199349aa7e8f7768c4165, type: 3}
+  - {fileID: 1174587622402679654, guid: d4f6f2800bf6a43468ab80adc44cabc0, type: 3}
+  spawnTimeRange: {x: 5, y: 10}
+  numberOfEnemies: 100
 --- !u!1 &1820155417
 GameObject:
   m_ObjectHideFlags: 0
@@ -3290,5 +3291,5 @@ MonoBehaviour:
   - {fileID: 3880504682858682033, guid: 67c32b8117f9a9f42bc214bdc9730599, type: 3}
   - {fileID: 560392147477943083, guid: 08c090176f8a47a4aaf58db4a1900457, type: 3}
   - {fileID: 7389191957892383155, guid: 9428fd9742b71ef43b2dcae7d94f342b, type: 3}
-  spawnTimeRange: {x: 1, y: 2}
-  numberOfEnemies: 5
+  spawnTimeRange: {x: 2, y: 10}
+  numberOfEnemies: 100
