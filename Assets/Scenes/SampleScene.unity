@@ -3210,8 +3210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f619e7e4e03704c49a60207636ee18f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 12
-  gravityModifier: 1
+  jumpForce: 20
+  gravityModifier: 3
   isOnGround: 1
   gameOver: 0
 --- !u!54 &2104125236
@@ -3292,4 +3292,4 @@ MonoBehaviour:
   - {fileID: 560392147477943083, guid: 08c090176f8a47a4aaf58db4a1900457, type: 3}
   - {fileID: 7389191957892383155, guid: 9428fd9742b71ef43b2dcae7d94f342b, type: 3}
   spawnTimeRange: {x: 2, y: 10}
-  numberOfEnemies: 100
+  numberOfEnemies: 0
