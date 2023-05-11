@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject[] enemyPrefabs;
-    private Vector3 spawnPos = new Vector3(28, -1, -1);
+    private Vector3 spawnPos = new Vector3(28, -2, 0);
     public Vector2 spawnTimeRange;
     public int numberOfEnemies;
     private PlayerController playerControllerScript;

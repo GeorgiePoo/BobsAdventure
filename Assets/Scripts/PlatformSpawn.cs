@@ -5,14 +5,15 @@ using UnityEngine;
 public class PlatformSpawn : MonoBehaviour
 {
     public GameObject[] platformPrefabs;
-    private Vector3 spawnPos = new Vector3(28, 30, -47);
+    private Vector3 spawnPos = new Vector3(28, 30, -46);
     public Vector2 spawnTimeRange;
     public int numberOfEnemies;
-
+    private PlayerController playerControllerScript;
 
     // Start is called before the first frame update
     void Start()
     {
+        playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
         StartCoroutine(SpawnPlatforms());
     }
 
@@ -26,11 +27,14 @@ public class PlatformSpawn : MonoBehaviour
     {
         for (int i = 0; i < numberOfEnemies; i++)
         {
-            GameObject randomPlatformPrefab = platformPrefabs[Random.Range(0, platformPrefabs.Length)];
-            Instantiate(randomPlatformPrefab, spawnPos, randomPlatformPrefab.transform.rotation);
+            if(playerControllerScript.gameOver == false)
+            {
+                GameObject randomPlatformPrefab = platformPrefabs[Random.Range(0, platformPrefabs.Length)];
+                Instantiate(randomPlatformPrefab, spawnPos, randomPlatformPrefab.transform.rotation);
 
-            float waitTime = Random.Range(spawnTimeRange.x, spawnTimeRange.y);
-            yield return new WaitForSeconds(waitTime);
+                float waitTime = Random.Range(spawnTimeRange.x, spawnTimeRange.y);
+                yield return new WaitForSeconds(waitTime);
+            }
         }
     }
 }

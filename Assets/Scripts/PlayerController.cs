@@ -30,7 +30,7 @@ public GameObject firePoint;
             isOnGround = false;
         }
 
-        if (Input.GetKey(KeyCode.Mouse0) && gameOver == false)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && gameOver == false)
         {
             Instantiate(laserPrefab, firePoint.transform.position, laserPrefab.transform.rotation);
         }
