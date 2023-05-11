@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1670,7 +1670,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196206693}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.081, y: 1.284, z: 0.802}
+  m_LocalPosition: {x: 0.081, y: 1.284, z: 1.234}
   m_LocalScale: {x: 0.67691046, y: 0.6769105, z: 0.67691046}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2213,7 +2213,7 @@ MonoBehaviour:
   platformPrefabs:
   - {fileID: 4805934394381421430, guid: 15a7c68b8ac199349aa7e8f7768c4165, type: 3}
   - {fileID: 1174587622402679654, guid: d4f6f2800bf6a43468ab80adc44cabc0, type: 3}
-  spawnTimeRange: {x: 5, y: 10}
+  spawnTimeRange: {x: 4, y: 8}
   numberOfEnemies: 100
 --- !u!1 &1820155417
 GameObject:
@@ -3214,6 +3214,8 @@ MonoBehaviour:
   gravityModifier: 3
   isOnGround: 1
   gameOver: 0
+  laserPrefab: {fileID: 5204633226942989749, guid: 033527f2964464007a5d27bf36b1ccc2, type: 3}
+  firePoint: {fileID: 1196206693}
 --- !u!54 &2104125236
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3291,5 +3293,5 @@ MonoBehaviour:
   - {fileID: 3880504682858682033, guid: 67c32b8117f9a9f42bc214bdc9730599, type: 3}
   - {fileID: 560392147477943083, guid: 08c090176f8a47a4aaf58db4a1900457, type: 3}
   - {fileID: 7389191957892383155, guid: 9428fd9742b71ef43b2dcae7d94f342b, type: 3}
-  spawnTimeRange: {x: 2, y: 10}
-  numberOfEnemies: 0
+  spawnTimeRange: {x: 0.5, y: 1}
+  numberOfEnemies: 100

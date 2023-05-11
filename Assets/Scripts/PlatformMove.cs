@@ -17,7 +17,7 @@ public class PlatformMove : MonoBehaviour
     {
         transform.Translate(Vector3.left * Time.deltaTime * speed);
 
-        if(transform.position.x < leftBound && gameObject.CompareTag("Platform"))
+        if(transform.position.x < leftBound)
         {
             Destroy(gameObject);
         }

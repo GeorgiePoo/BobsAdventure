@@ -10,6 +10,8 @@ public float jumpForce;
 public float gravityModifier;
 public bool isOnGround = true;
 public bool gameOver = false;
+public GameObject laserPrefab;
+public GameObject firePoint;
 
 
     // Start is called before the first frame update
@@ -26,6 +28,11 @@ public bool gameOver = false;
         {
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
+        }
+
+        if (Input.GetKey(KeyCode.Mouse0) && gameOver == false)
+        {
+            Instantiate(laserPrefab, firePoint.transform.position, laserPrefab.transform.rotation);
         }
     }
     private void OnCollisionEnter(Collision collision)
