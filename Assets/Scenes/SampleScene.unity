@@ -3599,7 +3599,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdcfef3290a834f91b301e7a7fb4cded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targets: []
+  targets:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   scoreText: {fileID: 979778793}
   gameOverText: {fileID: 710132901}
   isGameActive: 0
