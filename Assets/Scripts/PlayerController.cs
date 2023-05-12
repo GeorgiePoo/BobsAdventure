@@ -47,6 +47,10 @@ private AudioSource playerAudio;
         {
             isOnGround = true;
         }
+        else if (collision.gameObject.CompareTag("Platform"))
+        {
+            isOnGround = true;
+        }
         else if (collision.gameObject.CompareTag("Enemy"))
         {
             gameOver=true;
