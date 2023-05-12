@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class DestroyOnCollision : MonoBehaviour
 {
+
+    public ParticleSystem explosionParticle;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +25,7 @@ public class DestroyOnCollision : MonoBehaviour
         {
             Destroy(this.gameObject);
             Destroy(collision.gameObject);
+            explosionParticle.Play();
         }
     }
 }

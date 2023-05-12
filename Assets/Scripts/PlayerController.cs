@@ -13,14 +13,17 @@ public bool gameOver = false;
 public GameObject laserPrefab;
 public GameObject firePoint;
 private Animator playerAnim;
-
+public AudioClip laserSound;
+private AudioSource playerAudio;
 
     // Start is called before the first frame update
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
         playerAnim = GetComponent<Animator>();
+        playerAudio = GetComponent<AudioSource>();
         Physics.gravity *= gravityModifier;
+        
     }
 
     // Update is called once per frame
@@ -35,6 +38,7 @@ private Animator playerAnim;
         if (Input.GetKeyDown(KeyCode.Mouse0) && gameOver == false)
         {
             Instantiate(laserPrefab, firePoint.transform.position, laserPrefab.transform.rotation);
+            playerAudio.PlayOneShot(laserSound, 1.0f);
         }
     }
     private void OnCollisionEnter(Collision collision)
