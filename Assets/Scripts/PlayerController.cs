@@ -12,12 +12,14 @@ public bool isOnGround = true;
 public bool gameOver = false;
 public GameObject laserPrefab;
 public GameObject firePoint;
+private Animator playerAnim;
 
 
     // Start is called before the first frame update
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
+        playerAnim = GetComponent<Animator>();
         Physics.gravity *= gravityModifier;
     }
 
@@ -45,6 +47,7 @@ public GameObject firePoint;
         {
             gameOver=true;
             Debug.Log("Game Over!");
+            playerAnim.SetBool("Dead", true);
         }
     }
 }

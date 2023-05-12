@@ -2213,7 +2213,7 @@ MonoBehaviour:
   platformPrefabs:
   - {fileID: 4805934394381421430, guid: 15a7c68b8ac199349aa7e8f7768c4165, type: 3}
   - {fileID: 1174587622402679654, guid: d4f6f2800bf6a43468ab80adc44cabc0, type: 3}
-  spawnTimeRange: {x: 4, y: 8}
+  spawnTimeRange: {x: 3, y: 5}
   numberOfEnemies: 100
 --- !u!1 &1820155417
 GameObject:
@@ -3230,7 +3230,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 90
+  m_Constraints: 122
   m_CollisionDetection: 0
 --- !u!65 &2104125237
 BoxCollider:
@@ -3293,5 +3293,5 @@ MonoBehaviour:
   - {fileID: 3880504682858682033, guid: 67c32b8117f9a9f42bc214bdc9730599, type: 3}
   - {fileID: 560392147477943083, guid: 08c090176f8a47a4aaf58db4a1900457, type: 3}
   - {fileID: 7389191957892383155, guid: 9428fd9742b71ef43b2dcae7d94f342b, type: 3}
-  spawnTimeRange: {x: 0.5, y: 1}
+  spawnTimeRange: {x: 0.1, y: 1}
   numberOfEnemies: 100
