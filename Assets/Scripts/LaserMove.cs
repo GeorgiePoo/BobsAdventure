@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LaserMove : MonoBehaviour
 {
-    public float speed = 40.0f;
+    public float speed = 60.0f;
     private float rightBound = 24;
 
     // Start is called before the first frame update

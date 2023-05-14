@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Platform
   - Laser
+  - Ammo
   layers:
   - Default
   - TransparentFX
