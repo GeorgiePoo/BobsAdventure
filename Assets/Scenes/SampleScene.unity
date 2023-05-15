@@ -2669,7 +2669,7 @@ MonoBehaviour:
   gameOverText: {fileID: 1732996760}
   isGameActive: 0
   restartButton: {fileID: 1352948856}
-  titleScreen: {fileID: 1972914197}
+  titleScreen: {fileID: 983031473}
 --- !u!4 &994038192
 Transform:
   m_ObjectHideFlags: 0
