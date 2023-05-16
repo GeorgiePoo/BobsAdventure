@@ -3503,7 +3503,7 @@ MonoBehaviour:
   gravityModifier: 3
   isOnGround: 1
   gameOver: 0
-  laserPrefab: {fileID: 5204633226942989749, guid: 033527f2964464007a5d27bf36b1ccc2, type: 3}
+  laserPrefab: {fileID: 1196420420554174402, guid: c35044fd57bee4864b8492bf38db4c29, type: 3}
   firePoint: {fileID: 1196206693}
   laserSound: {fileID: 8300000, guid: 380a61624a607f042ab5e96218f37633, type: 3}
   fireRate: 0.5
