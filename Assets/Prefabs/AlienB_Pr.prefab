@@ -205,6 +205,7 @@ GameObject:
   - component: {fileID: 5868228849863376108}
   - component: {fileID: 2551859799777873267}
   - component: {fileID: -8313447291984499913}
+  - component: {fileID: 2935740309554051787}
   m_Layer: 0
   m_Name: AlienB_Pr
   m_TagString: Enemy
@@ -270,6 +271,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.6788151, z: 1}
   m_Center: {x: 0, y: 0.9868244, z: 0}
+--- !u!114 &2935740309554051787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560392147477943083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3ff01c1a1ae24edf9043e7f79b25f06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointValue: 0
+  explosionParticle: {fileID: 0}
 --- !u!1 &600315770902335261
 GameObject:
   m_ObjectHideFlags: 0
