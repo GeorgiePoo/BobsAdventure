@@ -23,4 +23,6 @@ public class MoveLeft : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+
 }

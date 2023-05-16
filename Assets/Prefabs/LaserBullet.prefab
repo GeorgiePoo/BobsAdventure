@@ -114,6 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
+  hitParticle: {fileID: 3615165736095743060, guid: 140db66b2ff0d4581b7011ae7fcd7ec9, type: 3}
 --- !u!114 &-1923994561300453003
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,7 +6,7 @@ public class AmmoSpawn : MonoBehaviour
 {
     public GameObject ammoPrefab;
     private Vector3 spawnPos = new Vector3(28, -2, 0);
-    private readonly float startDelay = 2;
+    private float startDelay = 2;
     public Vector2 spawnTimeRange;
 
     // Start is called before the first frame update

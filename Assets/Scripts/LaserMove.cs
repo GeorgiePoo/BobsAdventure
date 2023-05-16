@@ -6,6 +6,7 @@ public class LaserMove : MonoBehaviour
 {
     public float speed = 60.0f;
     private float rightBound = 24;
+    public ParticleSystem hitParticle;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,14 @@ public class LaserMove : MonoBehaviour
         if(transform.position.x > rightBound)
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("Enemy"))
+        {
+            hitParticle.Play();
         }
     }
 }

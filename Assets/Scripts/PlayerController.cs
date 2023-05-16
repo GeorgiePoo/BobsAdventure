@@ -19,6 +19,7 @@ private AudioSource playerAudio;
 public float fireRate;
 float nextFire;
 public int currentClip, maxClipSize = 10, currentAmmo, maxAmmoSize = 20;
+public ParticleSystem explosionParticle;
 
     internal void find(string v)
     {
@@ -49,6 +50,7 @@ public int currentClip, maxClipSize = 10, currentAmmo, maxAmmoSize = 20;
             Instantiate(laserPrefab, firePoint.transform.position, laserPrefab.transform.rotation);
             playerAudio.PlayOneShot(laserSound, 1.0f);
             currentClip--;
+            explosionParticle.Play();
         }
 
         if(Input.GetKeyDown(KeyCode.R) && gameOver == false)
