@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,6 +19,11 @@ private AudioSource playerAudio;
 public float fireRate;
 float nextFire;
 public int currentClip, maxClipSize = 10, currentAmmo, maxAmmoSize = 20;
+
+    internal void find(string v)
+    {
+        throw new NotImplementedException();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -65,6 +71,12 @@ public int currentClip, maxClipSize = 10, currentAmmo, maxAmmoSize = 20;
             gameOver=true;
             Debug.Log("Game Over!");
             playerAnim.SetBool("Dead", true);
+        }
+
+        else if (collision.gameObject.CompareTag("Ammo"))
+        {
+            currentAmmo = 20;
+            Destroy(collision.gameObject);
         }
     }
 
