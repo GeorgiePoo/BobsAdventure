@@ -77,7 +77,7 @@ public ParticleSystem explosionParticle;
 
         else if (collision.gameObject.CompareTag("Ammo"))
         {
-            currentAmmo = 20;
+            currentAmmo = 30;
             Destroy(collision.gameObject);
         }
     }
