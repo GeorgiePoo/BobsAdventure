@@ -1969,7 +1969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammoPrefab: {fileID: 8851329295737762567, guid: 777ba455c664e4dffb810d603e9814c7, type: 3}
-  spawnTimeRange: {x: 5, y: 10}
+  spawnTimeRange: {x: 7, y: 10}
 --- !u!4 &1494244658
 Transform:
   m_ObjectHideFlags: 0
