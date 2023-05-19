@@ -18,7 +18,7 @@ public AudioClip laserSound;
 private AudioSource playerAudio;
 public float fireRate;
 float nextFire;
-public int currentClip, maxClipSize = 10, currentAmmo, maxAmmoSize = 20;
+public int currentClip, maxClipSize = 5, currentAmmo, maxAmmoSize = 15;
 public ParticleSystem explosionParticle;
 
     internal void find(string v)
@@ -77,7 +77,7 @@ public ParticleSystem explosionParticle;
 
         else if (collision.gameObject.CompareTag("Ammo"))
         {
-            currentAmmo = 30;
+            currentAmmo = 15;
             Destroy(collision.gameObject);
         }
     }
