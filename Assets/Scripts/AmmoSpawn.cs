@@ -5,7 +5,7 @@ using UnityEngine;
 public class AmmoSpawn : MonoBehaviour
 {
     public GameObject ammoPrefab;
-    private Vector3 spawnPos = new Vector3(28, -2, 0);
+    private Vector3 spawnPos = new Vector3(28, -1, 0);
     private float startDelay = 2;
     public Vector2 spawnTimeRange;
 

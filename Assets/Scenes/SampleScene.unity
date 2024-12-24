@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,52 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &166794440
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 166794442}
-  - component: {fileID: 166794443}
-  m_Layer: 0
-  m_Name: AmmoSpawn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &166794442
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 166794440}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.6400853, y: -3.6694982, z: -0.7018079}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &166794443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 166794440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54e3e504c1a31448c8f5b4c002cddbfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ammoPrefab: {fileID: 8766986317237569925, guid: 96b43539d80ae3f4bb82c52190e6ded8, type: 3}
-  spawnTimeRange: {x: 0.5, y: 2}
 --- !u!1 &211200319
 GameObject:
   m_ObjectHideFlags: 0
@@ -1985,6 +1939,52 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350088116}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1494244656
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1494244658}
+  - component: {fileID: 1494244657}
+  m_Layer: 0
+  m_Name: AmmoSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1494244657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494244656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e3e504c1a31448c8f5b4c002cddbfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoPrefab: {fileID: 8851329295737762567, guid: 777ba455c664e4dffb810d603e9814c7, type: 3}
+  spawnTimeRange: {x: 7, y: 10}
+--- !u!4 &1494244658
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494244656}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.2376509, y: -1.6613789, z: 1.7087641}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1564875173
 GameObject:
   m_ObjectHideFlags: 0
@@ -2424,7 +2424,8 @@ MonoBehaviour:
   platformPrefabs:
   - {fileID: 4805934394381421430, guid: 15a7c68b8ac199349aa7e8f7768c4165, type: 3}
   - {fileID: 1174587622402679654, guid: d4f6f2800bf6a43468ab80adc44cabc0, type: 3}
-  spawnTimeRange: {x: 3, y: 5}
+  - {fileID: 9118309436600558863, guid: ce7473846b90d4ba6a13edd5ad28e935, type: 3}
+  spawnTimeRange: {x: 2, y: 3}
   numberOfEnemies: 100
 --- !u!1 &1820155417
 GameObject:
@@ -2535,7 +2536,6 @@ GameObject:
   - component: {fileID: 1830900664}
   - component: {fileID: 1830900663}
   - component: {fileID: 1830900662}
-  - component: {fileID: 1830900666}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Ground
@@ -2625,20 +2625,6 @@ Transform:
   m_Father: {fileID: 380838994}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1830900666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1830900661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54e3e504c1a31448c8f5b4c002cddbfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ammoPrefab: {fileID: 0}
-  spawnTimeRange: {x: 0, y: 0}
 --- !u!1 &1859611471
 GameObject:
   m_ObjectHideFlags: 0
@@ -3444,10 +3430,10 @@ MonoBehaviour:
   firePoint: {fileID: 1196206693}
   laserSound: {fileID: 8300000, guid: 380a61624a607f042ab5e96218f37633, type: 3}
   fireRate: 0.5
-  currentClip: 10
-  maxClipSize: 10
-  currentAmmo: 30
-  maxAmmoSize: 30
+  currentClip: 5
+  maxClipSize: 5
+  currentAmmo: 15
+  maxAmmoSize: 15
   explosionParticle: {fileID: 4212237911574779970, guid: f34d53a9f8cd409428b8d1e3addf4807, type: 3}
 --- !u!54 &2104125236
 Rigidbody:
@@ -3622,5 +3608,5 @@ MonoBehaviour:
   - {fileID: 3880504682858682033, guid: 67c32b8117f9a9f42bc214bdc9730599, type: 3}
   - {fileID: 560392147477943083, guid: 08c090176f8a47a4aaf58db4a1900457, type: 3}
   - {fileID: 7389191957892383155, guid: 9428fd9742b71ef43b2dcae7d94f342b, type: 3}
-  spawnTimeRange: {x: 0.5, y: 2}
+  spawnTimeRange: {x: 0.8, y: 1}
   numberOfEnemies: 100
